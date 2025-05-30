@@ -1,0 +1,46 @@
+/* Default styles for desktop */
+body {
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+}
